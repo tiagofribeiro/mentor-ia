@@ -1,0 +1,57 @@
+# python
+__pycache__/
+build/
+dist/
+
+# venv
+.env
+.venv/
+
+# django
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+static/
+staticfiles/
+
+# django-Q
+django_q/
+
+# vscode
+.vscode/*
+*.code-workspace
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# misc
+*.swp
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# celery
+celerybeat-schedule
+celerybeat.pid
+
+# logs
+logs/
+*.log
