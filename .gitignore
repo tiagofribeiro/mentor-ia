@@ -14,9 +14,7 @@ db.sqlite3-journal
 media/
 static/
 staticfiles/
-
-# django-Q
-django_q/
+migrations/
 
 # vscode
 .vscode/*
@@ -47,10 +45,6 @@ coverage.xml
 .env.development.local
 .env.test.local
 .env.production.local
-
-# celery
-celerybeat-schedule
-celerybeat.pid
 
 # logs
 logs/
