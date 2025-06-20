@@ -2,8 +2,8 @@ from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema
-from ..models import User
-from ..serializers import UserSerializer
+from apps.user.models import User
+from apps.user.serializers import UserSerializer
 
 class UserView(APIView):
     """
@@ -12,6 +12,7 @@ class UserView(APIView):
     def get(self, request):
         users = User.objects.all()
         serializer = UserSerializer(users, many=True)
+
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     @extend_schema(
@@ -23,5 +24,7 @@ class UserView(APIView):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
+
             return Response(serializer.data, status=status.HTTP_201_CREATED)
+        
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

@@ -25,6 +25,7 @@ done
 echo "Banco disponível! Aplicando migrações..."
 
 python manage.py makemigrations user
+python manage.py makemigrations chatbot
 python manage.py migrate
 
 echo "Criando superusuário..."

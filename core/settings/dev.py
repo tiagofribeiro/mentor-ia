@@ -19,14 +19,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Third-party apps
+    # terceiros
     'rest_framework',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
     'drf_spectacular',
     'drf_spectacular_sidecar', 
-    # Local apps
+    # local
     'apps.user',
+    'apps.chatbot',
 ]
 
 MIDDLEWARE = [

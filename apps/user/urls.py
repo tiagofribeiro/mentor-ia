@@ -1,6 +1,6 @@
 from django.urls import path
-from .api.user import UserView
-from .api.superuser import SuperUserView
+from apps.user.api.user import UserView
+from apps.user.api.superuser import SuperUserView
 
 urlpatterns = [
     path('', UserView.as_view(), name='user-register'),
