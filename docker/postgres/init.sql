@@ -1,0 +1,3 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+GRANT ALL PRIVILEGES ON DATABASE mentor_ia TO mentor_ia;
