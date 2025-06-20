@@ -42,7 +42,9 @@ Esse comando já executa a imagem do banco, o servidor para o Django e realiza a
 <br>
 
 A partir daí, a API deve estar em execução na porta 8000.  
-Para verificar o funcionamento e ver os endpoints disponíveis, acesse: [127.0.0.1:8000/api/swagger](127.0.0.1:8000/api/swagger)
+Para verificar o funcionamento e ver os endpoints disponíveis, acesse: [127.0.0.1:8000/api/swagger](http://127.0.0.1:8000/api/swagger)
+
+> As credenciais para realizar o login e obter o token pela primeira vez são as váriaveis `DJANGO_SUPERUSER_` no `.env`
 
 <br>
 
